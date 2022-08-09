@@ -9,7 +9,7 @@ const styles = {
 const Home = () => {
   return (
     <main className={styles.mainStyles}>
-      <ImageSlider />
+      <ImageSlider className='mb-4' />
       <Viewers />
     </main>
   );

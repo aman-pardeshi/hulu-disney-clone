@@ -24,7 +24,7 @@ const ImageSlider = () => {
     autoplay: true,
   };
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className='mb-6'>
       <div className={styles.sliderStyles}>
         <Image src={SliderImageOne} />
       </div>
