@@ -3,5 +3,19 @@
 @tailwind utilities;
 
 * {
-  background-color: #1a242f;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #212430, #17171a);
+}
+
+ul li button::before {
+  font-size: 10px;
+  color: rgb(150, 150, 171) !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: white !important;
 }
