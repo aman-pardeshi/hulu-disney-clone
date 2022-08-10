@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageSlider from './ImageSlider';
+import Movies from './Movies';
 import Viewers from './Viewers';
 
 const styles = {
@@ -9,8 +10,9 @@ const styles = {
 const Home = () => {
   return (
     <main className={styles.mainStyles}>
-      <ImageSlider className='mb-4' />
+      <ImageSlider />
       <Viewers />
+      <Movies />
     </main>
   );
 };
