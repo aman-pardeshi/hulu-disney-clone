@@ -1,6 +1,6 @@
-import { useRouter } from 'next/router';
-import Image from 'next/image';
-import React from 'react';
+import { useRouter } from "next/router";
+import Image from "next/image";
+import React from "react";
 
 const styles = {
   titleStyles: `text-xl font-bold tracking-wider px-5 pb-0`,
@@ -29,6 +29,7 @@ const MovieCard = ({ movieArray, type }) => {
                 width={60}
                 height={35}
                 className='object-cover'
+                alt='movie-thumnail'
               />
             </div>
           ))}

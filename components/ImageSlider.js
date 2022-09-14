@@ -7,7 +7,6 @@ import SliderImageOne from "../assests/slider-badag.jpg";
 import SliderImageTwo from "../assests/slider-badging.jpg";
 import SliderImageThree from "../assests/slider-scale.jpg";
 import SliderImageFour from "../assests/slider-scales.jpg";
-import SliderImageFive from "../assests/SliderImageFive.jpeg";
 
 const styles = {
   sliderStyles: `duration-300 border-4 border-transparent hover:border-4 
@@ -26,16 +25,16 @@ const ImageSlider = () => {
   return (
     <Slider {...settings} className='mb-6'>
       <div className={styles.sliderStyles}>
-        <Image src={SliderImageOne} layout='responsive' />
+        <Image src={SliderImageOne} layout='responsive' alt='slider-image' />
       </div>
       <div className={styles.sliderStyles}>
-        <Image src={SliderImageTwo} layout='responsive' />
+        <Image src={SliderImageTwo} layout='responsive' alt='slider-image' />
       </div>
       <div className={styles.sliderStyles}>
-        <Image src={SliderImageThree} layout='responsive' />
+        <Image src={SliderImageThree} layout='responsive' alt='slider-image' />
       </div>
       <div className={styles.sliderStyles}>
-        <Image src={SliderImageFour} layout='responsive' />
+        <Image src={SliderImageFour} layout='responsive' alt='slider-image' />
       </div>
     </Slider>
   );

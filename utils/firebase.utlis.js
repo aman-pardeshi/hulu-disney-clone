@@ -80,16 +80,6 @@ export const signOutUser = () => {
   signOut(auth);
 };
 
-export const checkUserOnLoad = () => {
-  const auth = getAuth();
-  auth.onAuthStateChanged(async (user) => {
-    if (user) {
-      console.log(user);
-      return user;
-    }
-  });
-};
-
 export const getSpecificMovie = async (id) => {
   const docRef = doc(db, "movies", id);
   const docSnap = await getDoc(docRef);

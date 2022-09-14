@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Logo from "../assests/Logo";
@@ -18,6 +17,7 @@ import {
   signOutUser,
 } from "../utils/firebase.utlis";
 import ChevronDown from "../assests/chevronDown";
+import Link from "next/link";
 
 const styles = {
   headerStyles: `h-[75px] py-5 px-10 mb-0.5 bg-[#17171A]`,
@@ -59,7 +59,11 @@ const Header = () => {
   return (
     <header className={styles.headerStyles}>
       <nav className='flex justify-between items-start'>
-        <Logo />
+        <Link href='/'>
+          <a>
+            <Logo />
+          </a>
+        </Link>
 
         <div className='flex items-start'>
           <div className={styles.iconStyles}>

@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
-import DisneyLogo from '../assests/viewers-disney.png';
-import NatGeoLogo from '../assests/viewers-national.png';
-import MarvelLogo from '../assests/viewers-marvel.png';
-import PixarLogo from '../assests/viewers-pixar.png';
-import StarWarsLogo from '../assests/viewers-starwars.png';
+import React from "react";
+import Image from "next/image";
+import DisneyLogo from "../assests/viewers-disney.png";
+import NatGeoLogo from "../assests/viewers-national.png";
+import MarvelLogo from "../assests/viewers-marvel.png";
+import PixarLogo from "../assests/viewers-pixar.png";
+import StarWarsLogo from "../assests/viewers-starwars.png";
 
 const styles = {
   containerStyles: `grid grid-cols-5 gap-8 mb-2`,
@@ -16,23 +16,23 @@ const Viewers = () => {
   return (
     <div className={styles.containerStyles}>
       <div className={styles.wrapperDivStyles}>
-        <Image src={DisneyLogo} />
+        <Image src={DisneyLogo} alt='disney-logo' />
       </div>
 
       <div className={styles.wrapperDivStyles}>
-        <Image src={NatGeoLogo} />
+        <Image src={NatGeoLogo} alt='natgeo-logo' />
       </div>
 
       <div className={styles.wrapperDivStyles}>
-        <Image src={MarvelLogo} />
+        <Image src={MarvelLogo} alt='marvel-logo' />
       </div>
 
       <div className={styles.wrapperDivStyles}>
-        <Image src={PixarLogo} />
+        <Image src={PixarLogo} alt='pixar-logo' />
       </div>
 
       <div className={styles.wrapperDivStyles}>
-        <Image src={StarWarsLogo} />
+        <Image src={StarWarsLogo} alt='starwars-logo' />
       </div>
     </div>
   );

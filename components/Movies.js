@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { getMovies } from '../utils/firebase.utlis';
-import MovieCard from './MovieCard';
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { getMovies } from "../utils/firebase.utlis";
+import MovieCard from "./MovieCard";
 
 const styles = {
   containerStyles: `mb-20 `,
@@ -25,10 +24,10 @@ const Movies = () => {
     asyncGetMovie();
   }, []);
 
-  const recommendedMovies = movies.filter((x) => x.type === 'recommend');
-  const newMovies = movies.filter((x) => x.type === 'new');
-  const trendingMovies = movies.filter((x) => x.type === 'trending');
-  const originalMovies = movies.filter((x) => x.type === 'original');
+  const recommendedMovies = movies.filter((x) => x.type === "recommend");
+  const newMovies = movies.filter((x) => x.type === "new");
+  const trendingMovies = movies.filter((x) => x.type === "trending");
+  const originalMovies = movies.filter((x) => x.type === "original");
 
   return (
     <div className={styles.containerStyles}>
