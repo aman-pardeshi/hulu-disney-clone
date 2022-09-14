@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 
 import huluDisneyLogo from "../assests/cta-logo1-custom.png";
-import secondLogo from "../assests/cta-logo-two.png";
+// import secondLogo from "../assests/cta-logo-two.png";
 import Image from "next/image";
 
 const styles = {
@@ -23,7 +23,7 @@ const Welcome = () => {
             Get endless entertainment, live sports, and the shows and movies you
             love.
           </p>
-          <Image src={secondLogo} alt='group-logo' />
+          {/* <Image src={secondLogo} alt='group-logo' /> */}
         </div>
       </div>
     </div>
