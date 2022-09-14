@@ -1,13 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import SliderImageOne from '../assests/slider-badag.jpg';
-import SliderImageTwo from '../assests/slider-badging.jpg';
-import SliderImageThree from '../assests/slider-scale.jpg';
-import SliderImageFour from '../assests/slider-scales.jpg';
-import SliderImageFive from '../assests/SliderImageFive.jpeg';
+import React from "react";
+import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import SliderImageOne from "../assests/slider-badag.jpg";
+import SliderImageTwo from "../assests/slider-badging.jpg";
+import SliderImageThree from "../assests/slider-scale.jpg";
+import SliderImageFour from "../assests/slider-scales.jpg";
+import SliderImageFive from "../assests/SliderImageFive.jpeg";
 
 const styles = {
   sliderStyles: `duration-300 border-4 border-transparent hover:border-4 
@@ -26,16 +26,16 @@ const ImageSlider = () => {
   return (
     <Slider {...settings} className='mb-6'>
       <div className={styles.sliderStyles}>
-        <Image src={SliderImageOne} />
+        <Image src={SliderImageOne} layout='responsive' />
       </div>
       <div className={styles.sliderStyles}>
-        <Image src={SliderImageTwo} />
+        <Image src={SliderImageTwo} layout='responsive' />
       </div>
       <div className={styles.sliderStyles}>
-        <Image src={SliderImageThree} />
+        <Image src={SliderImageThree} layout='responsive' />
       </div>
       <div className={styles.sliderStyles}>
-        <Image src={SliderImageFour} />
+        <Image src={SliderImageFour} layout='responsive' />
       </div>
     </Slider>
   );
