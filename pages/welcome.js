@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import loginBackground from "../assests/login-background.jpg";
+
 import huluDisneyLogo from "../assests/cta-logo1-custom.png";
 import secondLogo from "../assests/cta-logo-two.png";
 import Image from "next/image";
@@ -9,7 +9,7 @@ const styles = {
   containerStyles: `min-h-[calc(100vh-80px)] relative flex justify-center items-center`,
 };
 
-const welcome = () => {
+const Welcome = () => {
   return (
     <div>
       <Header />
@@ -30,4 +30,4 @@ const welcome = () => {
   );
 };
 
-export default welcome;
+export default Welcome;
